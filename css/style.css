@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*<--comienzo del header-->*/
+.header{
+    width: 100%;
+    background-color: rgb(9, 136, 247);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .navegacion > a{
+    color: black;
+    text-decoration: none;
+    padding-left: 2em;
+    font-family: 'Roboto';
+}
+
+.navegacion a:hover{
+    color: rgb(42, 241, 16);
+}
+
+/*<--cierre del header-->*/
+/* Estilos generales */ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: rgb(7, 7, 7);
+    line-height: 1.4;
+    font-size: 0.8em; /* Reducido tamaño base */
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #090909;
+    margin-top: 40px;
+    font-size: 2.2em; /* Reducido tamaño */
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* Encabezado con fondo y alineación de imagen */
+.header {
+    background-color: #059afd; /* Color de fondo del encabezado */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezados secundarios */
+h2, h3 {
+    color: #09090a;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.3em; /* Reducido tamaño */
+    text-align: center;
+}
+
+/* Párrafos */
+p {
+    font-size: 0.9em; /* Reducido tamaño */
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Enlaces */
+a {
+    color: #070707;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em; /* Reducido tamaño */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 40px;     /* Mantén la indentación */
+    padding: 0;            /* Elimina el padding por defecto */
+    font-size: 0.9em;      /* Mantén el tamaño reducido */
+    line-height: 1.6;      /* Mejor separación entre los elementos */
+    text-align: center;
+}
+
+/* Estilos de la lista desordenada */
+ul {
+    list-style-type: disc; /* Los puntos (disc) permanecen para la lista desordenada */
+}
+
+/* Estilos de la lista ordenada */
+ol {
+    list-style-type: decimal;  /* Mantén la numeración para la lista ordenada */
+}
+
+/* Mejorar la presentación de cada elemento de la lista */
+ul li, ol li {
+    margin-bottom: 18px;     /* Espacio entre los elementos */
+    font-size: 1em;          /* Tamaño de fuente adecuado */
+    display: block;          /* Cada ítem se muestra en bloque */
+}
+
+/* Puedes agregar estilo extra si lo deseas */
+ul li {
+    color: #0b0b0b;            /* Cambiar color de los ítems de la lista */
+}
+
+ol li {
+    color: #060606;         /* Un color diferente para la lista ordenada */
+}
+
+.hobbie ul > li {
+    display: block;
+}
+
+/* Tabla */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 8px 12px; /* Reducido el padding */
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 0.8em; /* Reducido tamaño */
+}
+
+th {
+    background-color: #0a0a0b;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #faf7f7;
+}
+
+tr:hover {
+    background-color: #fefefe;
+}
+
+/* Formulario de contacto */
+form {
+    background-color: #fff;
+    padding: 15px; /* Reducido el padding */
+    margin: 20px auto;
+    width: 300px; /* Reducido el ancho */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px; /* Reducido el padding */
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em; /* Reducido tamaño */
+}
+
+textarea {
+    height: 5px; /* Reducida la altura */
+    resize: vertical;
+}
+
+/* Estilo del botón de envío */
+button {
+    width: 100%;
+    padding: 10px; /* Reducido el padding */
+    background-color: #0b0c0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em; /* Reducido tamaño */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #09090a;
+}
+
+/* Estilo para la sección de redes sociales */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 0.9em; /* Reducido tamaño */
+}
+
+ul li {
+    display: block;
+    margin: 10px;
+}
+
+ul li a {
+    font-size: 1.1em; /* Reducido tamaño */
+    color: #0d0e0e;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #0496f7;
+}
+
+/* Fondo del sitio web */
+footer {
+    background-color: #098ff5;
+    color: white;
+    padding: 15px; /* Reducido padding */
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9em; /* Reducido tamaño */
+    margin: 0;
+}

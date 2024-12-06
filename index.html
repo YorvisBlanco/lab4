@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="../lab4/css/style.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <div class="logo"> 
+                <img src="img/yo2.png" alt="Foto de Yorvis Blanco" class="header-img">
+            </div>
+            <div>
+                <!-- Título Principal -->
+                <h1>Bienvenidos a Mi Primer Sitio Web</h1>
+            </div>
+            <div class="navegacion">
+                <a href="">Inicio</a>
+                <a href="">Mi experiencia</a>
+                <a href="">Contactanos</a>
+                <a href="">Mis proyectos</a>
+                <a href="">Acerca de</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Desarrollo -->
+    <section class="desarrollo">
+        <!-- Información personal -->
+        <section class="informacion-personal">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Yorvis Blanco. Bienvenidos a mi sitio web personal. Aquí encontrarás información sobre mí, mis hobbies, mis tareas y más.</p>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="hobbies">
+            <h2>Mis Hobbies</h2>
+            <ul>
+                <li>Cocinar</li>
+                <li>Practicar deportes</li>
+                <li>Ver películas</li>
+            </ul>
+        </section>        
+        <!-- Tareas -->
+        <section class="tareas">
+            <h2>Tareas Prioritarias</h2>
+            <ol>
+                <li>Estudiar</li>
+                <li>Hacer ejercicio</li>
+                <li>Realizar tareas educativas</li>
+                <li>Realizar tareas domesticas</li>
+            </ol>
+        </section>
+
+        <!-- Horario semanal -->
+        <section class="horario">
+            <h2>Mi Horario Semanal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Estudiar y trabajar </td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>Gimnasio y clases virtuales</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Trabajo y Gimnasio</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>Practicar deportes y descansar</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>Organizar cosas de estudio y tiempo libre</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- Formulario de contacto -->
+        <section class="contacto">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <form action="" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="name"  pattern="[A-Za-z]+" name="nombre" placeholder="Tu nombre" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    
+                    <button type="button" onclick="validateForm()" class="btn">Enviar mensaje</button>
+                </form>
+        </section>
+
+        <!-- Enlaces a redes sociales -->
+        <section class="redes-sociales">
+            <h3>Sígueme en mis redes sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/yorbis.blanco.92?mibextid=5GKqozciEe797PD2" target="_blank" class="redes-link">Facebook</a></li>
+                <li><a href="https://github.com/YorvisBlanco" target="_blank" class="redes-link">Github</a></li>
+                <li><a href="https://www.instagram.com/deluque_yorvis_?utm_source=qr&igsh=Z21hc3lkNDhtc2Jt" target="_blank" class="redes-link">Instagram</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="js/prueba.js"></script>
+
+</body>
+</html>
+
